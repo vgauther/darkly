@@ -6,4 +6,4 @@ J'ai donc fait un script qui va chercher dans chaque readme s'il trouve un flag,
 
 **Comment Eviter**
 
-On peut l'éviter avec une meilleure gestion du robot.txt, une meilleur gestion des routes, une meilleur configuration du serveur web qui renverrais une 403.
+On peut l'éviter avec une meilleur gestion des routes, une meilleur configuration du serveur web qui renverrais une 403. Un dossier .hidden n'est pas sensé être exposé. Si ce dossier hidden doit réelement être là, il faut mettre en place une restriction par ip.
