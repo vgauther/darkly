@@ -1,6 +1,9 @@
-Sur la page "feedback", il y a un formulaire.
-
-si on marque en commentaire `script` on a le flag.
+Un XSS stocké (stored XSS) se produit lorsqu'un attaquant enregistre du code malveillant directement dans la base de données ou sur le serveur d'un site, et que ce code est ensuite affiché aux utilisateurs sans être filtré, provoquant l'exécution automatique de scripts malveillants.
+On tente alors d'utiliser un payload simple : <script>alert(1)</script>
+Il ne fonctionne pas et les balises <script> sont trim lors de l'affichage 
+On imagine donc qu'il y a un filtre à evité
+< script >alert(1)< / script >
+On obtient le flag 
 
 **Comment eviter**
 
