@@ -14,3 +14,5 @@ Afin d'éviter d'éventuel filtre, on encode le payload en base64
 data:text/html;base64,PHNjcmlwdD5hbGVydCgiWFNTIik7PC9zY3JpcHQ+
 
 Et on obtient le flag
+
+A noté, que le payload data:text/html;<script>alert("XSS")</script> fonctionne mais ne donne pas le flag
