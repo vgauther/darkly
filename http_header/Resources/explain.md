@@ -8,7 +8,7 @@ You must cumming from : "https://www.nsa.gov/" to go to the next step
 
 Avec nos quelques recherches sur les headers, nous avons fini par comprendre que ces deux phrases étaient des indications pour le User-Agent et le Referer.
 
-Il nous suffit alors de faire une requête en utilisant Postman par exemple en modifiant les éléments du header.
+Il nous suffit alors de faire une requête en utilisant le navigateur et en modifiant les éléments du header.
 
 En retour de cette requête, nous avons une page de avec le flag.
 
