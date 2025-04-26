@@ -2,7 +2,7 @@ Ce paramètre src est réutilisé directement dans un élément HTML <object>, d
 
 <object data="VALEUR_DE_SRC"></object> 
 L'élément HTML <object> représente une ressource externe qui peut être interprétée comme une image, un contexte de navigation imbriqué ou une ressource à traiter comme un plugin.
-Il est connu qu'il possible d'exécuter du code javascript en l'injectant dans la variable.
+Il est connu qu'il est possible d'exécuter du code javascript en l'injectant dans la variable.
 
 On appelle ça une faille XSS (Cross site scripting) 
 On injecte du code javascript pour éxécuter une alert dans le navigateur
