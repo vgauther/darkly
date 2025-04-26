@@ -1,11 +1,11 @@
 Sur la page de recherche de membre quand on recherche autre chose qu'un id, on voit une erreur SQL on comprend qu'il y a une injection SQL a faire
 
-Après recherche on trouve `1 OR 1=1 UNION req` pour faire une injection ou req est notre requête perso
+Après recherche on trouve `1 UNION req` pour faire une injection ou req est notre requête perso
 
 Dans une base de données mariaDB, il y a une table `information_schema` qui répertorie les tables et colonnes on fait donc une recherche la dessus
 
 ```SQL
-	1 OR 1=1 UNION SELECT table_name, column_name FROM information_schema.columns
+	1 UNION SELECT table_name, column_name FROM information_schema.columns
 ```
 
 Dans cette table, on trouve que la table users contient un champ user_id, first_name, last_name, town, country, planet, Commentaire, countersign
@@ -13,7 +13,7 @@ Dans cette table, on trouve que la table users contient un champ user_id, first_
 Ne pouvant en sélectionner que deux après quelques requête, on trouve qu'il faut utiliser le commentaire et le countersign
 
 ```SQL
-	1 OR 1=1 UNION SELECT Commentaire, countersign FROM users
+	1 UNION SELECT Commentaire, countersign FROM users
 ```
 
 On a un commentaire à un message codé
