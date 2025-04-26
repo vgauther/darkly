@@ -1,4 +1,4 @@
-En faisant nmap sur le site, on voit que dans le robots.txt, il y a 2 disallowed entries.
+En regardant dans le robots.txt, il y a 2 disallowed entries.
 
 Naturellement, nous avons été voir ce qui s'y trouvé.
 
@@ -14,7 +14,7 @@ On essaye de se connecter sur le login avec mais ça ne fonctionne pas.
 
 Puis on décide de le mettre dans le détecteur de chiffrement de dcode.fr.
 
-dcode.fr nous suggère le MD5, en décodant, on trouve le mot 'dragon'.
+dcode.fr nous suggère le MD5, en décodant, on trouve le mot 'qwerty123@'.
 
 On essaye dans la page login mais ça ne marche pas.
 
@@ -24,4 +24,4 @@ Nous nous sommes connectés et nous avons eu le flag.
 
 **Comment Eviter**
 
-Là, c'est sans doute une histoire de permissions concrètement, il ne faut pas que le mot de passe administrateur soit accessible publiquement.
+Là, c'est sans doute une histoire de permissions concrètement, il ne faut pas que le mot de passe administrateur soit accessible publiquement. Le htpasswd ne doit pas être exposé
