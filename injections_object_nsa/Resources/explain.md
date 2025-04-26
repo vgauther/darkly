@@ -1,17 +1,16 @@
-En cliquant sur l'image de la NSA en page d'accueil, on arrive sur une page qui prend un argument media.
+Ce paramètre src est réutilisé directement dans un élément HTML <object>, dans le code source, on peut voir que l'attribut data prend la valeur de src
 
-On inspecte l'élément et on voit qu'il y a une balise object qui prend en argument data. On trouve qu'on peut mettre des scripts dans ce data pour qu'ils s'exécutent.
+<object data="VALEUR_DE_SRC"></object> 
+L'élément HTML <object> représente une ressource externe qui peut être interprétée comme une image, un contexte de navigation imbriqué ou une ressource à traiter comme un plugin.
+Il est connu qu'il possible d'exécuter du code javascript en l'injectant dans la variable.
 
-Puis nous avons compris que le data est "rempli" par l'argument src de l'url.
+On appelle ça une faille XSS (Cross site scripting) 
+On injecte du code javascript pour éxécuter une alert dans le navigateur
+<script>alert("XSS")</script>
+Cela ne fonctionne pas, apres quelques recherche on tombe sur ce forum
+https://security.stackexchange.com/questions/258306/how-is-object-tag-data-uri-xss-actually-xss
 
-Nous avons essayé de mettre en src javascript:alert(1) mais notre navigateur nous enlevé le 'javascript'
+Afin d'éviter d'éventuel filtre, on encode le payload en base64
+data:text/html;base64,PHNjcmlwdD5hbGVydCgiWFNTIik7PC9zY3JpcHQ+
 
-Donc nous avons utilisé une forme "encodée" data:text/html;base64,PHNjcmlwdD5hbGVydCgiWFNTIik7PC9zY3JpcHQ+
-
-et là, en chargeant la page nous avons eu le flag.
-
-src : https://security.stackexchange.com/questions/258306/how-is-object-tag-data-uri-xss-actually-xss
-
-**Comment Eviter**
-
-Encore une fois, il s'agirait de limiter les caractères utilisables.
+Et on obtient le flag
