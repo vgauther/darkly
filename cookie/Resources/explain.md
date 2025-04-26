@@ -15,3 +15,5 @@ On recharge la page et le flag apparait !
 **Comment Eviter**
 
 Il faut juste ne pas stocker des données sensibles dans les cookies.
+
+Il ne faut pas gerer les roles / permissions à travers les cookies mais plutot à travers un session id qui retrouvera les informations de l'utilisateur.
