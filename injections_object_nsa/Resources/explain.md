@@ -10,9 +10,6 @@ Donc nous avons utilisé une forme "encodée" data:text/html;base64,PHNjcmlwdD5h
 
 et là, en chargeant la page nous avons eu le flag.
 
-src :
-https://book.hacktricks.xyz/pentesting-web/xss-cross-site-scripting#places-where-you-can-inject-these-protocols
-
 **Comment Eviter**
 
 Encore une fois, il s'agirait de limiter les caractères utilisables.
