@@ -1,4 +1,4 @@
-Sur la page de recherche de search image, quand on recherche autre choses qu'un id on vois une erreur SQL on comprend qu'il y a une injection SQL à faire.
+Sur la page de recherche de search image, lorsqu'on cherche un id on comprend qu'une requête SQL est faite. 
 
 Après recherche, on trouve `1 OR 1=1 UNION req` pour faire une injection ou req est notre requête perso
 
