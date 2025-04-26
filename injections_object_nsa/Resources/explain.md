@@ -10,6 +10,8 @@ Donc nous avons utilisé une forme "encodée" data:text/html;base64,PHNjcmlwdD5h
 
 et là, en chargeant la page nous avons eu le flag.
 
+src : https://security.stackexchange.com/questions/258306/how-is-object-tag-data-uri-xss-actually-xss
+
 **Comment Eviter**
 
 Encore une fois, il s'agirait de limiter les caractères utilisables.
