@@ -20,4 +20,4 @@ On va sur https://md5decrypt.net : (md5):5ff9d0165b4f92b14994e5c685cdce28 => For
 
 **Comment Eviter**
 
-Protéger les requêtes en faisant des requêtes préparées.
+Protéger les requêtes en faisant des requêtes préparées. Et il ne faut pas afficher les erreurs.
