@@ -10,6 +10,8 @@ Et ça a marché.
 
 Nous avons eu un flag.
 
+On appelle cela un open redirect. Idéal pour faire du phising
+
 **Comment Eviter**
 
 Il semble que le site utilise une méthode GET pour faire le redirection. Ce qui n'est sans doute pas indispensable.
