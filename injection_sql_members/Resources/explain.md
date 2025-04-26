@@ -2,7 +2,7 @@ Sur la page de recherche de membre quand on recherche autre chose qu'un id, on v
 
 Après recherche on trouve `1 OR 1=1 UNION req` pour faire une injection ou req est notre requête perso
 
-Dans la plupart des bases de données, il y a une table `information_schema` qui répertorie les tables et colonnes on fait donc une recherche la dessus
+Dans une base de données mariaDB, il y a une table `information_schema` qui répertorie les tables et colonnes on fait donc une recherche la dessus
 
 ```SQL
 	1 OR 1=1 UNION SELECT table_name, column_name FROM information_schema.columns
