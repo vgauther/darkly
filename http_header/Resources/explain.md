@@ -1,6 +1,6 @@
 Lorsque l'on clique sur le lien de copyright, on arrive sur une page qui nous donne des informations sur l'albatros avec une musique en "fond".
 
-En inspectant la page, on découvre le man epitech mais surtout 2 informations.
+En inspectant la page, on découvre des commentaires mais surtout 2 informations.
 
 Let's use this browser : "ft_bornToSec". It will help you a lot.
 
