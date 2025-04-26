@@ -10,13 +10,11 @@ Dans une base de données mariaDB, il y a une table `information_schema` qui ré
 
 Dans cette table, on trouve que la table users contient un champ user_id, first_name, last_name, town, country, planet, Commentaire, countersign
 
-Ne pouvant en sélectionner que deux après quelques requête, on trouve qu'il faut utiliser le commentaire et le countersign
+On extrait l'intégralité du contenu, 2 colones par 2 et dans commentaire et countersign: on a un commentaire à un message codé de l'utilisateur flag.
 
 ```SQL
 	1 UNION SELECT Commentaire, countersign FROM users
 ```
-
-On a un commentaire à un message codé
 
 On va sur https://md5decrypt.net : (md5):5ff9d0165b4f92b14994e5c685cdce28 => FortyTwo => fortytwo => (sha256)fortytwo => the flag
 
