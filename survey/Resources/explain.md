@@ -1,6 +1,6 @@
-Ici, en allant sur la page survey et inspectant celle-ci, on a comprit que les différents input enclenchaient une requête POST.
+Ici, en allant sur la page survey et inspectant celle-ci, on a comprit que les différents input enclenchaient une requête POST pour ajouter une note entre 1 et 10. L'objectif serait de venir fausser les notes.
 
-Nous avons donc modifié la valeur, d'un des input puis en sélectionnant celui ci le flag est apparu.
+On intercepte la requête et modifie la valeur de l'input et en s'executant le flag est apparu.
 
 **Comment Eviter**
 
