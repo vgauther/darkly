@@ -14,4 +14,4 @@ En retour de cette requête, nous avons une page de avec le flag.
 
 **Comment Eviter**
 
-En soit, ce n'est pas vraiment une faille, il faut juste ne pas mettre des informations sensibles dans le front même en commentaire...
+En soit, ce n'est pas vraiment une faille, il faut juste ne pas mettre des informations sensibles dans le front même en commentaire... Si c'est pour identifier la personne qui se connecte une restriction par ip serait plus logique.
