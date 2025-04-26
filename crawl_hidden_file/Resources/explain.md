@@ -1,4 +1,4 @@
-Après avoir fait un nmap sur l'adresse ip on trouve un dossier .hidden qui contient des dossiers.
+On a regardé robots.txt. Un fichier robots.txt indique aux robots d'exploration d'un moteur de recherche les URL auxquelles il peut accéder sur un site. On voit qu'il y a 2 dossiers whatever et .hidden. On s'interesse au .hidden. 
 
 En cherchant un peut à l'aveuglette, il y a des dossiers dans des dossiers à "L'infini" dans chaque dossier il y a un readme.txt, on suppose que que le flag est dedans.
 
